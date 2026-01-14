@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "gazex",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 3, "lugar": "EXPLOSOR A1 - 3 M3 INERCIA", "long_lat": "LATITUD: 42°45'38.00\"N LONGITUD: 0°11'14.78\"E", "cood_x_utm": 269857.25, "coord_y_ut": 4738062.16, "altitud": 2238, "tipo_equip": "GAZEX", "foto": "fotos/gazex.jpg" }, "geometry": { "type": "Point", "coordinates": [ 0.187438929445676, 42.760555584520226 ] } },
+{ "type": "Feature", "properties": { "fid": 4, "lugar": "EXPLOSOR A2 – 3 M3 INERCIA", "long_lat": "LATITUD: 42°45'34.44\"N LONGITUD: 0°11'06.32\"E", "cood_x_utm": 269661.28, "coord_y_ut": 4737958.75, "altitud": 2352, "tipo_equip": "GAZEX", "foto": "fotos/gazex.jpg" }, "geometry": { "type": "Point", "coordinates": [ 0.18508894711742, 42.759566636159356 ] } },
+{ "type": "Feature", "properties": { "fid": 5, "lugar": "EXPLOSOR B3 – 3 M3 INERCIA", "long_lat": "LATITUD: 42°45'29.12\"N LONGITUD: 0°11'03.54\"E", "cood_x_utm": 269592.6, "coord_y_ut": 4737796.75, "altitud": 2331, "tipo_equip": "GAZEX", "foto": "fotos/gazex.jpg" }, "geometry": { "type": "Point", "coordinates": [ 0.184316642586189, 42.758088889721435 ] } },
+{ "type": "Feature", "properties": { "fid": 6, "lugar": "EXPLOSOR B4 – 1,5 M3 INERCIA", "long_lat": "LATITUD: 42°45'21.79\"N LONGITUD: 0°11'01.50\"E", "cood_x_utm": 269538.68, "coord_y_ut": 4737572.18, "altitud": 2305, "tipo_equip": "GAZEX", "foto": "fotos/gazex.jpg" }, "geometry": { "type": "Point", "coordinates": [ 0.183750035406314, 42.756052781935729 ] } },
+{ "type": "Feature", "properties": { "fid": 7, "lugar": "EXPLOSOR B5 – 1,5 M3 INERCIA", "long_lat": "LATITUD: 42°45'17.12\"N LONGITUD: 0°11'01.20\"E", "cood_x_utm": 269527.05, "coord_y_ut": 4737428.35, "altitud": 2275, "tipo_equip": "GAZEX", "foto": "fotos/gazex.jpg" }, "geometry": { "type": "Point", "coordinates": [ 0.183666712361165, 42.754755598223724 ] } },
+{ "type": "Feature", "properties": { "fid": 8, "lugar": "EXPLOSOR B6 – 1,5 M3 INERCIA", "long_lat": "LATITUD: 42°45'18.98\"N LONGITUD: 0°11'01.0\"E", "cood_x_utm": 269524.42, "coord_y_ut": 4737485.88, "altitud": 2289, "tipo_equip": "GAZEX", "foto": "fotos/gazex.jpg" }, "geometry": { "type": "Point", "coordinates": [ 0.183611161657105, 42.755272266325598 ] } },
+{ "type": "Feature", "properties": { "fid": 9, "lugar": "EXPLOSOR B7 – 3M3 INERCIA", "long_lat": "LATITUD: 42°45'24.87\"N LONGITUD: 0°11'02.25\"E", "cood_x_utm": 269558.9, "coord_y_ut": 4737666.62, "altitud": 2313, "tipo_equip": "GAZEX", "foto": "fotos/gazex.jpg" }, "geometry": { "type": "Point", "coordinates": [ 0.183958340928674, 42.756908303441342 ] } }
+]
+}

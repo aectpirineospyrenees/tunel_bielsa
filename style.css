@@ -1,0 +1,192 @@
+/* CONFIGURACIÓN DEL HEADER */
+
+/* Estilo para el contenedor del título con el título a la izquierda y los logos a la derecha */
+#titulo-container {
+    height: 90px; /* Altura fija del encabezado */
+    display: flex; /* Mantiene el diseño flexbox */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacia los elementos */
+    background-color: #e0e0e0; /* Fondo gris claro */
+    padding: 0 20px; /* Ajusta el espaciado interno */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+#titulo-container h1 {
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    margin: 0; /* Elimina márgenes */
+    color: #333; /* Color del texto */
+}
+
+#titulo-container .logos {
+    display: flex; /* Contenedor para los logos */
+    gap: 10px; /* Espaciado entre los logos */
+}
+
+#titulo-container img {
+    height: 40px; /* Ajusta el tamaño de los logos */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    #titulo-container {
+        flex-direction: column; /* Cambia a diseño vertical */
+        align-items: center; /* Centra los elementos */
+    }
+
+    #titulo-container .logos {
+        margin-top: 10px; /* Espaciado superior para los logos */
+    }
+
+    #titulo-container h1 {
+        text-align: center; /* Centra el texto */
+    }
+}
+
+/* Asegura que el contenedor del mapa se ajuste correctamente a todas las superficies */
+#contenedor-mapa {
+    top: 90px; /* Coincide con la altura del encabezado */
+    height: calc(100vh - 90px); /* Calcula el espacio restante */
+    width: 100vw; /* Asegúrate de que ocupe todo el ancho */
+    position: absolute; /* Posición absoluta para ocupar el espacio */
+    left: 0;
+    z-index: 0; /* Asegura que el mapa esté detrás de otros elementos */
+}
+
+/* Asegura que el mapa sea responsivo */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita barras de desplazamiento */
+    box-sizing: border-box; /* Incluye padding y bordes en el tamaño */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    #contenedor-mapa {
+        height: calc(100vh - 120px); /* Ajusta la altura si el encabezado es más grande en pantallas pequeñas */
+    }
+}
+
+
+/* =============================
+   SIDEBAR SIMPLE Y ELEGANTE
+   ============================= */
+
+.sidenav {
+    top: 90px;
+    height: calc(100vh - 90px);
+    width: 500px; /* Sidebar más estrecho */
+    background: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 20px; /* Espaciado interno reducido */
+    border-left: none;
+    border-radius: 0; /* Sin bordes redondeados */
+    z-index: 1001;
+    overflow-y: auto;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+/* Overlay */
+.sidenav-overlay {
+    top: 90px;
+    height: calc(100vh - 90px);
+    background: rgba(0, 0, 0, 0.25);
+    transition: background 0.3s ease;
+}
+
+/* Título del sidebar */
+.sidenav .user-view {
+    padding: 15px 0;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.sidenav .user-view h5 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Secciones del sidebar */
+#propiedades-panel, #latlon {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+#propiedades-panel h6 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+/* Lista de propiedades */
+#propiedades-list li {
+    list-style: none;
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Coordenadas */
+#latlon {
+    font-size: 0.95rem;
+    color: #666;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Foto en el sidebar */
+#foto-panel {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#foto-panel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidenav {
+        top: 120px;
+        height: calc(100vh - 120px);
+        width: 100%;
+        padding: 15px;
+    }
+
+    .sidenav .user-view {
+        padding: 10px 0;
+    }
+}
+
+/* Restablecer viñetas dentro de SweetAlert que Materialize oculta */
+.swal2-html-container ul {
+    list-style-type: disc !important;
+    padding-left: 1.5em !important;
+    margin-top: 10px !important;
+}
+
+.swal2-html-container li {
+    display: list-item !important;
+    margin-bottom: 5px;
+}

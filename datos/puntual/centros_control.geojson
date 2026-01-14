@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "centros_control",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 2, "_ID": 2, "_NAME": null, "_REMARKS": null, "_REC_TIME": "09/11/2025 09:13:02.297 GMT+02:00", "_LATITUDE": 42.720800495, "_LONGITUDE": 0.198249109, "_ELEVATION": 0.0, "_ORTHO_HT": 0.0, "nombre": "Centro de Control Principal", "foto": "fotos/centro_control_sur.jpg", "tipo_equip": "CENTRO DE CONTROL" }, "geometry": { "type": "Point", "coordinates": [ 0.198249109, 42.720800495, 0.0 ] } },
+{ "type": "Feature", "properties": { "fid": 16, "_ID": 18, "_NAME": null, "_REMARKS": null, "_REC_TIME": "09/11/2025 13:21:39.154 GMT+02:00", "_LATITUDE": 42.748052166999997, "_LONGITUDE": 0.19169379, "_ELEVATION": 0.0, "_ORTHO_HT": 0.0, "nombre": "Centro Secundario de Control y Sala de Bombas", "foto": "fotos/centro_control_norte.jpg", "tipo_equip": "CENTRO DE CONTROL" }, "geometry": { "type": "Point", "coordinates": [ 0.19169379, 42.748052166999983, 0.0 ] } }
+]
+}
