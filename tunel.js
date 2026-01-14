@@ -5,35 +5,39 @@ document.addEventListener('DOMContentLoaded', function () {
     // ===============================
     Swal.fire({
         title: 'Instrucciones de uso / Instructions d\'utilisation',
+        width: '800px', // Aumentamos el ancho para que las columnas no queden muy estrechas
         html: `
-            <div style="text-align: left; font-size: 0.95rem; line-height: 1.5;">
-                <p><b>Español:</b></p>
-                <p>Bienvenido al <b>Visor Cartográfico del paso transfronterizo de Bielsa-Aragnouet</b>.</p>
-                <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
-                    <li>Pinche en los distintos elementos para acceder a su información.</li>
-                    <li>Los datos pueden tener un desfase temporal.</li>
-                    <li>La información mostrada es informativa.</li>
-                </ul>
-            </div>
-            <hr>
-            <div style="text-align: left; font-size: 0.95rem; line-height: 1.5;">
-                <p><b>Français :</b></p>
-                <p>Bienvenue dans le <b>Visionneur Cartographique du passage transfrontalier de Bielsa-Aragnouet</b>.</p>
-                <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
-                    <li>Appuyez sur les différents éléments pour accéder à leurs informations.</li>
-                    <li>Les données peuvent présenter un décalage temporel.</li>
-                    <li>Les informations affichées sont à titre informatif uniquement.</li>
-                </ul>
+            <div style="display: flex; gap: 20px; text-align: left; align-items: flex-start;">
+                
+                <div style="flex: 1; font-size: 0.95rem; line-height: 1.5; border-right: 1px solid #eee; padding-right: 15px;">
+                    <p><b>Español:</b></p>
+                    <p>Bienvenido al <b>Visor Cartográfico del paso transfronterizo de Bielsa-Aragnouet</b>.</p>
+                    <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+                        <li>Pinche en los distintos elementos para acceder a su información.</li>
+                        <li>Los datos pueden tener un desfase temporal.</li>
+                        <li>La información mostrada es informativa.</li>
+                    </ul>
+                </div>
+
+                <div style="flex: 1; font-size: 0.95rem; line-height: 1.5;">
+                    <p><b>Français :</b></p>
+                    <p>Bienvenue dans le <b>Visionneur Cartographique du passage transfrontalier de Bielsa-Aragnouet</b>.</p>
+                    <ul style="list-style-type: disc; padding-left: 20px; margin-top: 10px;">
+                        <li>Appuyez sur les différents éléments pour acceder à leurs informations.</li>
+                        <li>Les données peuvent présenter un décalage temporel.</li>
+                        <li>Les informations affichées sont à titre informatif uniquement.</li>
+                    </ul>
+                </div>
+
             </div>
         `,
-                icon: 'warning',
-        confirmButtonText: 'He leído y acepto / Je ai lu et j\'accepte',
+        icon: 'warning',
+        confirmButtonText: 'He leído y acepto / J\'ai lu et j\'accepte',
         confirmButtonColor: '#8e5938',
         allowOutsideClick: false,
         allowEscapeKey: false
     }).then((result) => {
         if (result.isConfirmed) {
-            // Solo si acepta, arrancamos el visor
             inicializarVisor();
         }
     });
@@ -47,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         M.Sidenav.init(document.querySelectorAll('.sidenav'));
 
         // --- MAPA ---
-        const map = L.map('contenedor-mapa').setView([42.712296, 0.198962], 12.5);
+        const map = L.map('contenedor-mapa').setView([42.73187911276912, 0.19583659236030743], 12.5);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; OpenStreetMap contributors',
