@@ -3,6 +3,6 @@
 "name": "puesto_medico",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "fid": 15, "_ID": 17, "_NAME": null, "_REMARKS": null, "_REC_TIME": "09/11/2025 13:14:44.031 GMT+02:00", "_LATITUDE": 42.748130953, "_LONGITUDE": 0.191940553, "_ELEVATION": 0.0, "_ORTHO_HT": 0.0, "nombre": "Puesto Médico Avanzado", "foto": "fotos/puesto_medico.jpg", "tipo_equip": "PUESTO MÉDICO ANAZADO" }, "geometry": { "type": "Point", "coordinates": [ 0.191940553, 42.748130953, 0.0 ] } }
+{ "type": "Feature", "properties": { "fid": 15, "_ID": 17, "_NAME": null, "_REMARKS": null, "_REC_TIME": "09/11/2025 13:14:44.031 GMT+02:00", "_LATITUDE": 42.748130953, "_LONGITUDE": 0.191940553, "_ELEVATION": 0.0, "_ORTHO_HT": 0.0, "nombre": "Puesto Médico Avanzado / Poste médical avancé", "foto": "fotos/puesto_medico.jpg", "tipo_equip": "PUESTO MÉDICO / POSTE MÉDICAL" }, "geometry": { "type": "Point", "coordinates": [ 0.191940553, 42.748130953, 0.0 ] } }
 ]
 }
